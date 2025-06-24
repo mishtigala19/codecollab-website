@@ -1,12 +1,31 @@
-# React + Vite
+# codecollab-website
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern, responsive website for CodeCollab — a student-led initiative to build and showcase collaborative open-source projects.
 
-Currently, two official plugins are available:
+## CodeCollab Website
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+This is the official site for **CodeCollab**, a UMass Amherst-based tech community that empowers students to learn by building real-world, team-driven projects. The site highlights the club’s mission, members, and open-source project gallery.
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## Features
+
+- Clean, responsive frontend with React + Tailwind CSS
+- GitHub-integrated project gallery (upcoming)
+- Markdown-powered member profiles
+- Functional join form with backend/email integration
+- SEO-optimized static site deployment
+
+---
+
+## Tech Stack
+
+| Category         | Tools                                      |
+|------------------|---------------------------------------------|
+| Frontend         | React.js, Tailwind CSS, TanStack Router     |
+| Data Integration | GitHub API, react-markdown                  |
+| Forms            | EmailJS / Formspree                         |
+| Hosting          | AWS S3 + CloudFront or Vercel (upcoming)   |
+| Design           | Figma, Whimsical                            |
+
+
