@@ -8,8 +8,13 @@ const Navbar = () => {
       <div className="w-full flex items-center justify-between px-6 py-2">
         {/* Logo and Title on the left */}
         <div className="flex items-center gap-3">
-          <Users size={38} strokeWidth={2.5} className="text-white" />
-          <span className="font-serif text-2xl font-bold text-white tracking-tight select-none">CodeCollab</span>
+          <Link
+            to="/"
+            className="flex gap-3 font-serif text-white text-lg px-2 py-1 transition hover:underline hover:underline-offset-4 hover:text-[#fbeaea]"
+          >
+            <Users size={38} strokeWidth={2.5} className="text-white" />
+            <span className="font-serif text-2xl font-bold text-white tracking-tight select-none">CodeCollab</span>
+          </Link>
         </div>
         {/* Navigation links*/}
         <div className="flex items-center gap-4">
