@@ -11,9 +11,9 @@ const Projects = () => {
                 <h1 className="text-4xl font-bold text-[#831c1c] text-center mb-8 font-serif"> Projects</h1>
                 <div className="grid grid-cols-1 gap-y-8 max-w-4xl mx-auto"> 
                         <ProjectCard />
-                        <ProjectCard />
-                        <ProjectCard />
-                        <ProjectCard />
+                        {/* <ProjectCard /> */}
+                        {/* <ProjectCard /> */}
+                        {/* <ProjectCard /> */}
                 </div>
             </main>
             <Footer />
