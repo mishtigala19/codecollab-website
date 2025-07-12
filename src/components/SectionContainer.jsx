@@ -25,23 +25,14 @@ export const Container = ({ children, className = "", size = "default" }) => {
   );
 };
 
-// Card Container - for card-style sections with background
-export const CardSection = ({ children, className = "" }) => {
-  return (
-    <div className={`bg-white rounded-lg shadow-md p-6 sm:p-8 ${className}`}>
-      {children}
-    </div>
-  );
-};
-
 // Hero Section Container - for hero/banner sections
 export const HeroSection = ({ children, className = "" }) => {
   return (
-    <section className={`relative py-16 sm:py-24 lg:py-32 ${className}`}>
-      <Container>
+    <Section className={`relative bg-gradient-to-b from-[#fbeaea] via-white to-[#a02c2c]/30 min-h-screen flex flex-col justify-center items-center overflow-hidden ${className}`}>
+      <Container className="text-center">
         {children}
       </Container>
-    </section>
+    </Section>
   );
 };
 
@@ -55,11 +46,11 @@ export const ContentSection = ({ children, className = "", padding = "default" }
   };
 
   return (
-    <section className={`${paddingClasses[padding]} ${className}`}>
+    <Section className={`${paddingClasses[padding]} ${className}`}>
       <Container>
         {children}
       </Container>
-    </section>
+    </Section>
   );
 };
 
@@ -76,6 +67,24 @@ export const GridSection = ({ children, className = "", cols = "3" }) => {
     <div className={`grid ${gridClasses[cols]} gap-6 sm:gap-8 ${className}`}>
       {children}
     </div>
+  );
+};
+
+// Card Container - for individual cards
+export const CardContainer = ({ children, className = "" }) => {
+  return (
+    <div className={`bg-white rounded-xl shadow-lg p-6 ${className}`}>
+      {children}
+    </div>
+  );
+};
+
+// Footer Section Container
+export const FooterSection = ({ children, className = "" }) => {
+  return (
+    <Section className={`bg-[#831c1c] py-8 text-center text-sm text-white ${className}`}>
+      {children}
+    </Section>
   );
 };
 
