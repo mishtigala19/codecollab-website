@@ -24,7 +24,7 @@ const Members = () => {
         <div className="min-h-screen flex flex-col">
             <Navbar />
             <Section className="flex-grow bg-gradient-to-b from-[#fbeaea] via-white to-[#a02c2c]/30">
-                <Container className="py-8 bg-[#fbeaea] min-h-[calc(100vh-64px-80px)]">
+                <Container className="py-8 min-h-[calc(100vh-64px-80px)]">
                     <h1 className="text-4xl font-bold text-[#831c1c] text-center mb-8 font-serif">Members</h1>
                     
                     <GridSection cols="3" className="max-w-5xl mx-auto">
