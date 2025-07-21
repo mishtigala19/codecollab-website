@@ -10,6 +10,7 @@ import Join from './routes/join'
 import Projects from './routes/projects'
 import Members from './routes/members'
 import Home from './routes/home'
+import MemberBio from './routes/memberBio'
 
 const rootRoute = new RootRoute({
     component:App,
@@ -30,6 +31,11 @@ const membersRoute = new Route({
     path: '/members',
     component: Members
 })
+const memberBioRoute = new Route({
+    getParentRoute: () => membersRoute,
+    path: '$slug',
+    component: MemberBio
+})
 const projectsRoute = new Route({ 
     getParentRoute: () => rootRoute,
     path: '/projects',
@@ -37,6 +43,6 @@ const projectsRoute = new Route({
 })
 
 
-const routeTree = rootRoute.addChildren([homeRoute,joinRoute,membersRoute,projectsRoute])
+const routeTree = rootRoute.addChildren([homeRoute,joinRoute,membersRoute.addChildren([memberBioRoute]),projectsRoute])
 
 export const router = createRouter({routeTree})

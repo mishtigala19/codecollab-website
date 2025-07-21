@@ -21,7 +21,8 @@ export const fetchReposForUser = async (username, repoNames = []) => {
     }
   `;
 
-  const res = await axios.post(
+  try { 
+    const res = await axios.post(
     "https://api.github.com/graphql",
     { query },
     {
@@ -41,5 +42,11 @@ export const fetchReposForUser = async (username, repoNames = []) => {
     avatar: repo.owner.avatarUrl,
   }));
 
-  return repos;
+    return repos;
+  } catch (err) {
+    if (err.response && err.response.status === 403) {
+      throw new Error("Rate limit reached—please refresh later.");
+    }
+    throw new Error("Something went wrong while fetching repos.");
+  }
 };
