@@ -8,7 +8,11 @@ export default function MemberCard(props) {
     const { name, role, avatar, github, slug } = props
     
     return (
-        <CardContainer className="min-w-[16rem] max-w-[20rem] w-full flex flex-col items-center md:items-start gap-6 mx-auto">
+        <CardContainer className="
+            min-w-[14rem] max-w-[18rem] 
+            sm:min-w-[16rem] sm:max-w-[20rem] 
+            md:min-w-[18rem] md:max-w-[22rem] 
+            w-full flex flex-col items-center md:items-start gap-6 mx-auto">
             <div className="flex-shrink-0 w-24 h-24 sm:w-28 sm:h-28 md:w-32 md:h-32 lg:w-36 lg:h-36 bg-[#fbeaea] rounded-full flex items-center justify-center overflow-hidden shadow-inner">
                 {/* <Users size={45} strokeWidth={1.5} className="text-[#a02c2c] opacity-70 items-center" /> */}
                 <img src={avatar} alt={`${name}'s avatar`}  />
