@@ -15,11 +15,11 @@ const Projects = () => {
                     
                     <GridSection cols="1" className="max-w-4xl mx-auto justify-items-center">
                         <ProjectCard
-                        username="josephmisiti"
-                        repos={["awesome-machine-learning"]}/>
-                        <ProjectCard
-                         username="torvalds"
-                        repos={["linux"]}/>
+                        username="ptajwani"
+                        repos={["Financial-News-Sentiment-Analysis-Stock-Movement-Prediction"]}/>
+                        <ProjectCard username="mishtigala19" repos={["weather-event-notifier"]} />
+                        <ProjectCard username="mishtigala19" repos={["codecollab-website"]}/> 
+                        <ProjectCard username="supriyaahejib" repos={["personal-portfolio-template"]} />
                     </GridSection>
                 </Container>
             </Section>
