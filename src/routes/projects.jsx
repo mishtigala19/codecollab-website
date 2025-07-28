@@ -20,6 +20,8 @@ const Projects = () => {
                         <ProjectCard username="mishtigala19" repos={["weather-event-notifier"]} />
                         <ProjectCard username="mishtigala19" repos={["codecollab-website"]}/> 
                         <ProjectCard username="supriyaahejib" repos={["personal-portfolio-template"]} />
+                        <ProjectCard username="rbose21-05" repos={["PersonalPortfolio_CodeCollab"]} />
+                        <ProjectCard username="Romaisafatima1" repos={["Cryptocurrency-Time-Series-Forecasting-Volatility-Modeling"]} />
                     </GridSection>
                 </Container>
             </Section>
